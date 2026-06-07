@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haritha Buddiga— Portfolio</title>
+
+  <!-- Google Fonts (loads online; falls back to system fonts offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════ NAVBAR ════ -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">
+        <span class="acc">&lt;</span>HB<span class="acc">/&gt;</span>
+      </a>
+
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"            class="nl">Home</a></li>
+        <li><a href="#about"           class="nl">About</a></li>
+        <li><a href="#skills"          class="nl">Skills</a></li>
+        <li><a href="#education"       class="nl">Education</a></li>
+        <li><a href="#projects"        class="nl">Projects</a></li>
+        <li><a href="#research"        class="nl">Research</a></li>
+        <li><a href="#certifications"  class="nl">Certificates</a></li>
+        <li><a href="#extracurricular" class="nl">Activities</a></li>
+        <li><a href="#contact"         class="nl">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button id="themeBtn" class="icon-btn" title="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button id="menuBtn" class="icon-btn burger" title="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ════ HERO ════ -->
+  <section id="home" class="hero">
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="hero-glow g3"></div>
+
+    <div class="container hero-flex">
+      <!-- Left text -->
+      <div class="hero-text">
+        <p class="hello"><span class="live-dot"></span> Hello, I'm</p>
+        <h1 class="hname">Haritha<br><span class="grad-text">Buddiga</span></h1>
+        <p class="hrole">
+          <span class="bracket">&lt;</span><span id="typed"></span><span class="caret">|</span><span class="bracket">/&gt;</span>
+        </p>
+        <p class="hdesc">
+          CS Student from <strong>India 🇮🇳</strong> · Passionate about
+          <strong>Artificial Intelligence</strong>, Cloud Computing, and
+          building solutions that make a real difference.
+        </p>
+        <div class="hbtns">
+          <a href="#projects" class="btn btn-fill">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="resume.pdf" class="btn btn-outline" id="resumeBtn" download="Haritha_Buddiga_Resume.pdf">
+            <i class="fa-solid fa-file-arrow-down"></i> Resume
+          </a>
+        </div>
+        <div class="hsocials">
+          <a href="https://github.com/harithabuddiga"   target="_blank" class="soc" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/haritha-buddiga-38493b361" target="_blank" class="soc" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right code window -->
+      <div class="hero-code">
+        <div class="cwin">
+          <div class="cwin-bar">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            <span class="cwin-title">haritha.py</span>
+          </div>
+          <div class="cwin-body">
+<pre><span class="pk">class</span> <span class="pc">Developer</span>:
+    <span class="pk">def</span> <span class="pf">__init__</span>(self):
+        self.name     = <span class="ps">"Haritha Buddiga"</span>
+        self.role     = <span class="ps">"BSc CS Student"</span>
+        self.skills   = [<span class="ps">"Python"</span>, <span class="ps">"Java"</span>, <span class="ps">"SQL"</span>, <span class="ps">"MERN"</span>]
+        self.status   = <span class="ps">"Open to Internships"</span>
+
+    <span class="pk">def</span> <span class="pf">mission</span>(self):
+        <span class="pk">return</span> <span class="ps">"Solving complex problems"</span>
+
+<span class="pcmt"># Running...</span>
+<span class="po">&gt;&gt;&gt;</span> Developer().<span class="pf">mission</span>()
+<span class="po">&gt;</span> <span class="ps">'Innovate &amp; Inspire'</span> <span class="caret">▌</span></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ════ ABOUT ════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">About <em>Me</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="av-outer"></div>
+          <div class="av-mid"></div>
+          <div class="av-inner">
+            <img src="profile.jpeg" alt="Haritha Buddiga" class="av-img">
+          </div>
+          <span class="av-badge av-b1"><i class="fa-brands fa-python"></i></span>
+          <span class="av-badge av-b2"><i class="fa-solid fa-brain"></i></span>
+          <span class="av-badge av-b3"><i class="fa-brands fa-js"></i></span>
+          <span class="av-badge av-b4"><i class="fa-solid fa-shuttlecock"></i></span>
+        </div>
+
+        <div class="about-body">
+          <p class="ab-lead">
+            I'm <strong>Haritha Buddiga</strong>, a Computer Science undergraduate with strong foundations in Programming, Data Structures, and Machine Learning.
+          </p>
+          <p class="ab-text">
+            Experienced in developing AI-based applications and full-stack projects. I'm skilled in building predictive models, working with cloud databases, and participating in competitive coding challenges. 
+            Passionate about problem solving, UI/UX design, and applied AI research.
+          </p>
+          <ul class="ab-facts">
+            <li><i class="fa-solid fa-location-dot"></i><span>India</span></li>
+            <li><i class="fa-solid fa-graduation-cap"></i><span>BSc CS · 2024 – 2027</span></li>
+            <li><i class="fa-solid fa-microchip"></i><span>AI &amp; Web Enthusiast</span></li>
+            <li><i class="fa-solid fa-table-tennis-paddle-ball"></i><span>Badminton Enthusiast</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-fill" style="margin-top:1.75rem">
+            Say Hello <i class="fa-regular fa-hand-wave"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ SKILLS ════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">My <em>Skills</em></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Bars -->
+        <div class="skill-bars">
+          <h3 class="skill-sub">Proficiency</h3>
+
+          <div class="sk"><div class="sk-lbl"><span>C Programming</span><span class="sk-pct">85%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="85"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>Python</span><span class="sk-pct">80%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="80"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>Cloud Computing(AWS)</span><span class="sk-pct">75%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="75"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>React</span><span class="sk-pct">70%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="70"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>MongoDB</span><span class="sk-pct">68%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="68"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>AI and ML</span><span class="sk-pct">67%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="67"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>HTML and CSS</span><span class="sk-pct">65%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="65"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>SQL</span><span class="sk-pct">65%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="65"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>Data Structure using c</span><span class="sk-pct">60%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="60"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>JavaScript</span><span class="sk-pct">55%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="55"></div></div></div>
+        </div>
+
+        <!-- Icons -->
+        <div class="skill-icons">
+          <h3 class="skill-sub">Tech Stack</h3>
+          <div class="ti-grid">
+            <div class="ti"><i class="fa-solid fa-c"></i><span>C</span></div>
+            <div class="ti"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="ti"><i class="fa-solid fa-cloud"></i><span>AWS</span></div>
+            <div class="ti"><i class="fa-solid fa-database"></i><span>MongoDB</span></div>
+            <div class="ti"><i class="fa-brands fa-react"></i><span>React</span></div>
+            <div class="ti"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+            <div class="ti"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="ti"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ EDUCATION ════ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">Education</h2>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon-col">
+          <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="edu-line"></div>
+        </div>
+        <div class="edu-info">
+          <span class="edu-year">2024 — 2027</span>
+          <h3>BSc Computer Science</h3>
+          <p class="edu-branch">Aditya Women's Degree College (Affiliated to Andhra University)</p>
+          <p class="edu-desc">
+            Currently maintaining a <strong>8.79 CGPA</strong>. Focusing on software engineering, database management, and AI.
+          </p>
+          <div class="edu-chips">
+            <span>Data Structures</span>
+            <span>Python</span><span>C</span><span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-card" style="margin-top: 2rem;">
+        <div class="edu-icon-col">
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-line" style="background:transparent;"></div>
+        </div>
+        <div class="edu-info">
+          <span class="edu-year">2022 — 2024</span>
+          <h3>Intermediate (12th Grade)</h3>
+          <p class="edu-branch">Sree Acharyaa Junior College (BIEAP)</p>
+          <p class="edu-desc">
+            Completed with an aggregate of <strong>88.4% (884 marks)</strong>.
+          </p>
+          <div class="edu-chips">
+            <span>Mathematics</span><span>Physics</span><span>Chemistry</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ PROJECTS ════ -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">My <em>Projects</em></h2>
+      </div>
+
+      <div class="proj-grid">
+
+        <!-- LuckyBus -->
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-ico ico-cyan"><i class="fa-solid fa-bus"></i></div>
+            <div class="proj-links">
+              <a href="https://github.com/HarithaBuddiga" class="plink" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-name">LuckyBus</h3>
+          <p class="proj-desc">
+            A Real-Time College Bus Tracking App developed as an Android application for real-time bus tracking using GPS. 
+            Implemented live location updates and ETA predictions using Firebase and Google Maps API.
+          </p>
+          <div class="proj-stack">
+            <span>Kotlin</span><span>Firebase</span><span>Google Maps API</span>
+          </div>
+        </div>
+
+        <!-- AI Prescription Analyzer -->
+        <div class="proj-card proj-featured reveal">
+          <span class="feat-badge">⭐ Featured</span>
+          <div class="proj-top">
+            <div class="proj-ico ico-indigo"><i class="fa-solid fa-capsules"></i></div>
+            <div class="proj-links">
+              <a href="https://github.com/HarithaBuddiga/AI-Prescription-Analyzer" class="plink" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-name">AI Prescription Analyzer</h3>
+          <p class="proj-desc">
+            A Deep Learning application that predicts medicines from prescription images. 
+            It displays disease info, dosage, and side effects using a custom CSV database.
+          </p>
+          <div class="proj-stack">
+            <span>TensorFlow</span><span>Streamlit</span><span>Python</span><span>Pandas</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ RESEARCH WORK ════ -->
+  <section id="research" class="section reveal">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">Research <em>Work</em></h2>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon-col">
+          <div class="edu-icon"><i class="fa-solid fa-microscope"></i></div>
+          <div class="edu-line" style="background:transparent;"></div>
+        </div>
+        <div class="edu-info">
+          <span class="edu-year">In Progress</span>
+          <h3>Prescription Analysis System</h3>
+          <p class="edu-branch">AI & ML Research</p>
+          <p class="edu-desc">
+            Conducting research on applying machine learning techniques to analyze medical prescription data. 
+            Developing and evaluating ML models using Python-based libraries for prediction and analysis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CERTIFICATIONS ════ -->
+  <section id="certifications" class="section section-alt reveal">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">06</span>
+        <h2 class="sec-title">Certifications</h2>
+      </div>
+      <div class="extra-side" style="flex-direction: row; flex-wrap: wrap;">
+        <div class="extra-card" style="flex: 1; min-width: 300px;">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <h4>Professional Certifications</h4>
+            <p style="font-size: 0.85rem; line-height: 2;">
+              • AI & ML Certification – ULearn<br>
+              • Python for Data Science, AI & Development – Coursera<br>
+              • Python & C Programming – Cisco Networking Academy<br>
+              • HTML & CSS – Coursera
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ EXTRACURRICULAR ════ -->
+  <section id="extracurricular" class="section reveal">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">07</span>
+        <h2 class="sec-title">Beyond <em>Code</em></h2>
+      </div>
+
+      <div class="extra-grid">
+        <!-- Main activity card -->
+        <div class="extra-main">
+          <div class="cricket-card">
+            <div class="cc-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="cc-body">
+              <span class="cc-live">● Active</span>
+              <h3>Competitive Programmer &amp; Team Player</h3>
+              <p>
+                Consistently secured 1st place in weekly coding contests and actively participating in technical seminars.
+              </p>
+              <ul style="font-size: 0.85rem; color: var(--muted); margin-top: 1rem; list-style: disc; padding-left: 1.2rem; line-height: 1.6;">
+                <li>1st Place — UI/UX Hackathon</li>
+                <li>1st Place — HTML & CSS Hackathon (2024-2025)</li>
+                <li>Semi-Finalist — Voyage Hackathon 3.0 (2025)</li>
+                <li>Research Paper Shortlisted (Prescription Analyzer)</li>
+                <li>418th Rank — CodeQuezt #27 (14,445 participants)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="traits">
+            <span class="trait"><i class="fa-solid fa-comment-dots"></i> Public Speaking</span>
+            <span class="trait"><i class="fa-solid fa-people-group"></i> Team Collaboration</span>
+            <span class="trait"><i class="fa-solid fa-code"></i> Coding Contests</span>
+            <span class="trait"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+            <span class="trait"><i class="fa-solid fa-user-tie"></i> Leadership</span>
+          </div>
+        </div>
+
+        <!-- Side cards -->
+        <div class="extra-side">
+          <div class="extra-card">
+            <i class="fa-solid fa-microphone-lines"></i>
+            <div>
+              <h4>Seminars &amp; Presentations</h4>
+              <p>Presenting technical topics and project demonstrations with confidence.</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <i class="fa-solid fa-handshake"></i>
+            <div>
+              <h4>Team Collaboration</h4>
+              <p>Working effectively with teams to build solutions and achieve goals.</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <i class="fa-solid fa-trophy"></i>
+            <div>
+              <h4>Coding Competitions</h4>
+              <p>Multiple first-place finishes in weekly coding challenges.</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <i class="fa-solid fa-medal"></i>
+            <div>
+              <h4>Achievement Badges</h4>
+              <p>Recognition earned through consistent coding performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CONTACT ════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">08</span>
+        <h2 class="sec-title">Let's <em>Connect</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info">
+          <p class="ci-intro">
+            Open to internships, collaborations, and conversations about tech.
+            Don't hesitate to reach out!
+          </p>
+          <ul class="ci-list">
+            <li>
+              <span class="ci-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div><strong>Location</strong><span>India</span></div>
+            </li>
+            <li>
+              <span class="ci-icon"><i class="fa-brands fa-github"></i></span>
+              <div><strong>GitHub</strong><a href="https://github.com/harithabuddiga" target="_blank">github.com/harithabuddiga</a></div>
+            </li>
+            <li>
+              <span class="ci-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <div><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/haritha-buddiga-38493b361" target="_blank">linkedin.com/in/haritha-buddiga</a></div>
+            </li>
+          </ul>
+          <div class="ci-socials">
+            <a href="https://github.com/harithabuddiga"   target="_blank" class="soc" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/haritha-buddiga-38493b361" target="_blank" class="soc" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="fg">
+            <label for="fName">Name *</label>
+            <input type="text"  id="fName"  name="name"    placeholder="Your name"       required>
+            <span class="ferr" id="errName"></span>
+          </div>
+          <div class="fg">
+            <label for="fEmail">Email *</label>
+            <input type="email" id="fEmail" name="email"   placeholder="your@email.com"  required>
+            <span class="ferr" id="errEmail"></span>
+          </div>
+          <div class="fg">
+            <label for="fSub">Subject</label>
+            <input type="text"  id="fSub"   name="subject" placeholder="What's this about?">
+          </div>
+          <div class="fg">
+            <label for="fMsg">Message *</label>
+            <textarea id="fMsg" name="message" rows="5" placeholder="Your message…" required></textarea>
+            <span class="ferr" id="errMsg"></span>
+          </div>
+          <button type="submit" class="btn btn-fill btn-block">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="ftoast" id="fToast"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo"><span class="acc">&lt;</span>HB<span class="acc">/&gt;</span></a>
+      <p>© 2025 Haritha Buddiga · Built with <i class="fa-solid fa-heart" style="color:#f87171"></i> &amp; Coffee</p>
+      <div class="f-socials">
+        <a href="https://github.com/harithabuddiga"   target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/haritha-buddiga-38493b361" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="btt" class="btt" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
